@@ -7,8 +7,8 @@ import { CgMail } from "react-icons/cg";
 const HeroSection = () => {
   return (
     <div>
-        <section className="flex mb-10">
-            <div className="flex gap-24 sm:flex-row mt-10 mx-auto">
+        <section className="flex mb-5">
+            <div className="flex gap-24 sm:flex-row mt-5 mx-auto">
                 <div className="flex items-center col-span-6 sm:col-span-1 lg:mt-6">
                     <div className="bg-black w-[200px] h-[200px] lg:w-[200px] lg:h-[200px] relative rounded-full overflow-hidden">
                         <Image

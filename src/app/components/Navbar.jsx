@@ -7,9 +7,7 @@ const Navbar = () => {
             <Link href={"/"} className="text-2xl text-white font-semibold">
                 Calvin Huang 
             </Link>
-            <div className="menu hidden md:block md:w-auto" id="navbar">
-
-            </div>
+            
         </div>
     );
 };
