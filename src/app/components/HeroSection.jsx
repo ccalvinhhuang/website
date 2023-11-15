@@ -15,7 +15,7 @@ const HeroSection = () => {
           width={200}
           height={200}
         />
-        <div className="text-center sm:text-left mt-10">
+        <div className="text-center sm:text-left mt-5">
           <h1 className="text-white mb-4 text-2xl sm:text-3xl lg:text-4xl">
             Calvin Huang
           </h1>
@@ -37,31 +37,64 @@ const HeroSection = () => {
       </h2>
       <div className="mt-10">
         <div className="text-white mb-10">
-          <h3 className="text-xl mb-2">Machine Learning Intern</h3>
-          <p className="text-[#ADB7BE] mb-4">
-            EIC Lab @ Georgia Tech | Sept 2023 - Current
-          </p>
-          <p className="text-base mb-10">
-            Description of your responsibilities and achievements.
-          </p>
+          <div className="flex gap-36">
+            <div>
+              <h3 className="text-xl mb-2">Machine Learning Intern</h3>
+              <p className="text-[#ADB7BE] mb-4">
+                EIC Lab @ Georgia Tech | Sept 2023 - Current
+              </p>
+              <p className="text-base mb-10">
+                Description of your responsibilities and achievements.
+              </p>
+            </div>
+            <Image
+              src="/images/eiclab.png"
+              alt="eic image"
+              width={150}
+              height={25}
+              style={{ width: "100px", height: "100px" }}
+            />
+          </div>
         </div>
-        <div className="text-white">
-          <h3 className="text-xl mb-2">Data Analyst</h3>
-          <p className="text-[#ADB7BE] mb-4">
-            Park Lab @ UC Irvine | Aug 2022 - Sept 2023
-          </p>
-          <p className="text-base mb-10">
-            Description of your responsibilities and achievements.
-          </p>
+        <div className="text-white mb-10">
+          <div className="flex gap-36">
+            <div>
+              <h3 className="text-xl mb-2">Data Analyst Intern</h3>
+              <p className="text-[#ADB7BE] mb-4">
+                Park Lab @ UC Irvine | Aug 2022 - Sept 2023
+              </p>
+              <p className="text-base mb-10">
+                Description of your responsibilities and achievements.
+              </p>
+            </div>
+            <Image
+              src="/images/ucischoolimage.jpeg"
+              alt="uci image"
+              width={150}
+              height={25}
+              style={{ width: "100px", height: "100px" }}
+            />
+          </div>
         </div>
-        <div className="text-white">
-          <h3 className="text-xl mb-2">Machine Learning Intern</h3>
-          <p className="text-[#ADB7BE] mb-4">
-            SoftCom Lab @ Cal Poly Pomona | Dec 2021 - July 2023
-          </p>
-          <p className="text-base">
-            Description of your responsibilities and achievements.
-          </p>
+        <div className="text-white mb-10">
+          <div className="flex gap-36">
+            <div>
+              <h3 className="text-xl mb-2">Software Engineering Intern</h3>
+              <p className="text-[#ADB7BE] mb-4">
+                Cal Poly Pomona | Dec 2021 - Jul 2023
+              </p>
+              <p className="text-base mb-10">
+                Description of your responsibilities and achievements.
+              </p>
+            </div>
+            <Image
+              src="/images/calpolyimage.png"
+              alt="cal poly image"
+              width={150}
+              height={25}
+              style={{ width: "100px", height: "100px" }}
+            />
+          </div>
         </div>
       </div>
     </div>
