@@ -36,15 +36,17 @@ const HeroSection = () => {
         Experience
       </h2>
       <div className="mt-10">
-        <div className="text-white mb-10">
-          <div className="flex gap-36">
+        <div className="text-white mb-10 ">
+          <div className="flex gap-48">
             <div>
               <h3 className="text-xl mb-2">Machine Learning Intern</h3>
               <p className="text-[#ADB7BE] mb-4">
                 EIC Lab @ Georgia Tech | Sept 2023 - Current
               </p>
-              <p className="text-base mb-10">
-                Description of your responsibilities and achievements.
+              <p className="text-base mb-10 w-96">
+                Youngest applicant admitted in Georgia Tech history. Applying
+                ensemble techniques with Pytorch to neighbor aggregation in GNN
+                training to improve convergence/accuracy.
               </p>
             </div>
             <Image
@@ -57,19 +59,21 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="text-white mb-10">
-          <div className="flex gap-36">
+          <div className="flex gap-48">
             <div>
               <h3 className="text-xl mb-2">Data Analyst Intern</h3>
               <p className="text-[#ADB7BE] mb-4">
-                Park Lab @ UC Irvine | Aug 2022 - Sept 2023
+                Park Lab @ UC Irvine | Aug 2022 - Sep 2023
               </p>
-              <p className="text-base mb-10">
-                Description of your responsibilities and achievements.
+              <p className="text-base mb-10 w-96">
+                Evaluated relationships between glyphosate/AMPA exposure, blood
+                levels of sex hormones and c-reactive proteins with statistical
+                data analysis.
               </p>
             </div>
             <Image
               src="/images/ucischoolimage.jpeg"
-              alt="uci image"
+              alt="park image"
               width={150}
               height={25}
               style={{ width: "100px", height: "100px" }}
@@ -77,19 +81,20 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="text-white mb-10">
-          <div className="flex gap-36">
+          <div className="flex gap-48">
             <div>
-              <h3 className="text-xl mb-2">Software Engineering Intern</h3>
+              <h3 className="text-xl mb-2">Software Engineer Intern</h3>
               <p className="text-[#ADB7BE] mb-4">
-                Cal Poly Pomona | Dec 2021 - Jul 2023
+                Softcom Lab @ Cal Poly | Dec 2021 - Jul 2023
               </p>
-              <p className="text-base mb-10">
-                Description of your responsibilities and achievements.
+              <p className="text-base mb-10 w-96">
+                Designed an end-user centric approach for automating the
+                generation of supervised image-classification models.
               </p>
             </div>
             <Image
-              src="/images/calpolyimage.png"
-              alt="cal poly image"
+              src="/images/softcomlab.png"
+              alt="softcomlab image"
               width={150}
               height={25}
               style={{ width: "100px", height: "100px" }}
@@ -97,6 +102,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      <h2 className="text-white text-3xl mb-4 mx-auto text-center">Projects</h2>
     </div>
   );
 };
