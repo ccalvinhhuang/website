@@ -28,6 +28,7 @@ const HeroSection = () => {
             >
               Georgia Tech
             </a>{" "}
+            | ML Fanatic
           </p>
           <div className="flex items-center justify-center sm:justify-start space-x-4">
             <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
