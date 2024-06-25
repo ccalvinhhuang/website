@@ -7,7 +7,7 @@ import { CgMail } from "react-icons/cg";
 const HeroSection = () => {
   return (
     <div className="flex flex-col mx-auto">
-      <div className="flex gap-24">
+      <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-24">
         <Image
           src="/images/hero-image.jpeg"
           alt="hero image"
@@ -19,10 +19,10 @@ const HeroSection = () => {
           <h1 className="text-white mb-4 text-2xl sm:text-3xl lg:text-4xl">
             Calvin Huang
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 ">
+          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
             CS @ Georgia Tech | AI/ML Researcher
           </p>
-          <div className="flex items-center sm:justify-start space-x-4">
+          <div className="flex items-center justify-center sm:justify-start space-x-4">
             <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
               Resume
             </button>
@@ -36,69 +36,96 @@ const HeroSection = () => {
         Experience
       </h2>
       <div className="mt-10">
-        <div className="text-white mb-10 ">
-          <div className="flex gap-48">
+        <div className="text-white mb-10">
+          <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48">
             <div>
-              <h3 className="text-xl mb-2">Machine Learning Intern</h3>
+              <h3 className="text-xl mb-2">FTTP</h3>
               <p className="text-[#ADB7BE] mb-4">
-                EIC Lab @ Georgia Tech | Sept 2023 - Current
+                Jane Street Capital | Mar 2024 - Mar 2024
               </p>
               <p className="text-base mb-10 w-96">
-                Youngest applicant admitted in Georgia Tech history. Applying
-                ensemble techniques with Pytorch to neighbor aggregation in GNN
-                training to improve convergence/accuracy.
+                1 of 100 undergrads selected to learn about Jane Street’s
+                trading models through classes, games, and simulations.
               </p>
             </div>
-            <Image
-              src="/images/eiclab.png"
-              alt="eic image"
-              width={150}
-              height={25}
-              style={{ width: "100px", height: "100px" }}
-            />
+            <div className="flex justify-center w-full -mt-20">
+              <Image
+                src="/images/jslogocolored.jpeg"
+                alt="eic image"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
           </div>
         </div>
         <div className="text-white mb-10">
-          <div className="flex gap-48">
+          <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48">
             <div>
-              <h3 className="text-xl mb-2">Data Analyst Intern</h3>
+              <h3 className="text-xl mb-2">Machine Learning Intern</h3>
+              <p className="text-[#ADB7BE] mb-4">
+                EIC Lab @ Georgia Tech | Sep 2023 - Current
+              </p>
+              <p className="text-base mb-10 w-96">
+                Optimized custom GraphSAGE models using PyTorch and DGL,
+                enhancing GNN node classification accuracy by up to 5%.
+              </p>
+            </div>
+            <div className="flex justify-center w-full -mt-20">
+              <Image
+                src="/images/eiclab.png"
+                alt="eic image"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="text-white mb-10">
+          <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48">
+            <div>
+              <h3 className="text-xl mb-2">Data Science Intern</h3>
               <p className="text-[#ADB7BE] mb-4">
                 Park Lab @ UC Irvine | Aug 2022 - Sep 2023
               </p>
               <p className="text-base mb-10 w-96">
-                Evaluated relationships between glyphosate/AMPA exposure, blood
-                levels of sex hormones and c-reactive proteins with statistical
-                data analysis.
+                Analyzed relationships between glyphosate/AMPA exposure, blood
+                levels of sex hormones and c-reactive proteins.
               </p>
             </div>
-            <Image
-              src="/images/ucischoolimage.jpeg"
-              alt="park image"
-              width={150}
-              height={25}
-              style={{ width: "100px", height: "100px" }}
-            />
+            <div className="flex justify-center w-full -mt-20">
+              <Image
+                src="/images/ucischoolimage.jpeg"
+                alt="park image"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
           </div>
         </div>
         <div className="text-white mb-10">
-          <div className="flex gap-48">
+          <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48">
             <div>
               <h3 className="text-xl mb-2">Software Engineer Intern</h3>
               <p className="text-[#ADB7BE] mb-4">
-                Softcom Lab @ Cal Poly | Dec 2021 - Jul 2023
+                Softcom Lab | Apr 2023 - Jul 2023
               </p>
               <p className="text-base mb-10 w-96">
-                Designed an end-user centric approach for automating the
-                generation of supervised image-classification models.
+                Migrated a training pipeline from a Keras-based model to a
+                no-code solution for fine-tuning YOLOv5 on custom data.
               </p>
             </div>
-            <Image
-              src="/images/softcomlab.png"
-              alt="softcomlab image"
-              width={150}
-              height={25}
-              style={{ width: "100px", height: "100px" }}
-            />
+            <div className="flex justify-center w-full -mt-20">
+              <Image
+                src="/images/softcomlab.png"
+                alt="softcomlab image"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
           </div>
         </div>
       </div>
