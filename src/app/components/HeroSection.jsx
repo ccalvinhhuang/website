@@ -9,7 +9,7 @@ const HeroSection = () => {
     <div className="flex flex-col mx-auto">
       <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-24">
         <Image
-          src="/images/hero-image.jpeg"
+          src="/images/calvin.jpeg"
           alt="hero image"
           className="rounded-full bg-black"
           width={200}
@@ -20,7 +20,14 @@ const HeroSection = () => {
             Calvin Huang
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            CS @ Georgia Tech | AI/ML Researcher
+            CS Student @{" "}
+            <a
+              href="https://www.gatech.edu/"
+              target="_blank"
+              style={{ color: "#DAA520" }}
+            >
+              Georgia Tech
+            </a>{" "}
           </p>
           <div className="flex items-center justify-center sm:justify-start space-x-4">
             <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
@@ -36,6 +43,27 @@ const HeroSection = () => {
         Experience
       </h2>
       <div className="mt-10">
+        <div className="text-white mb-10">
+          <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48">
+            <div>
+              <h3 className="text-xl mb-2">Software Engineer Intern</h3>
+              <p className="text-[#ADB7BE] mb-4">OKSI | Apr 2024 - Cur</p>
+              <p className="text-base mb-10 w-96">
+                Designed an LLM-backed assistant for filling SCIF forms by
+                integrating RAG with LLaMA-3, increasing accuracy by 53%.
+              </p>
+            </div>
+            <div className="flex justify-center w-full -mt-20">
+              <Image
+                src="/images/oksi_logo.jpeg"
+                alt="eic image"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
+          </div>
+        </div>
         <div className="text-white mb-10">
           <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48">
             <div>
@@ -64,7 +92,7 @@ const HeroSection = () => {
             <div>
               <h3 className="text-xl mb-2">Machine Learning Intern</h3>
               <p className="text-[#ADB7BE] mb-4">
-                EIC Lab @ Georgia Tech | Sep 2023 - Current
+                EIC Lab @ Georgia Tech | Sep 2023 - Cur
               </p>
               <p className="text-base mb-10 w-96">
                 Optimized custom GraphSAGE models using PyTorch and DGL,
