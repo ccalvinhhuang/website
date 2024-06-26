@@ -31,12 +31,18 @@ const HeroSection = () => {
             | ML Fanatic
           </p>
           <div className="flex items-center justify-center sm:justify-start space-x-4">
-            <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
-              Resume
-            </button>
+            <a
+              href="/images/calvin_huang_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
+                Resume
+              </button>
+            </a>
             <BsLinkedin color="#a3a3a3" size={25} />
             <BsGithub color="#a3a3a3" size={25} />
-            <CgMail color="#a3a3a3" size={25} />
+            <CgMail color="#a3a3a3" size={30} />
           </div>
         </div>
       </div>
@@ -48,7 +54,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48">
             <div>
               <h3 className="text-xl mb-2">Software Engineer Intern</h3>
-              <p className="text-[#ADB7BE] mb-4">OKSI | Apr 2024 - Cur</p>
+              <p className="text-[#ADB7BE] mb-4">OKSI | Apr 2024 - Current</p>
               <p className="text-base mb-10 w-96">
                 Designed an LLM-backed assistant for filling SCIF forms by
                 integrating RAG with LLaMA-3, increasing accuracy by 53%.
@@ -93,7 +99,7 @@ const HeroSection = () => {
             <div>
               <h3 className="text-xl mb-2">Machine Learning Intern</h3>
               <p className="text-[#ADB7BE] mb-4">
-                EIC Lab @ Georgia Tech | Sep 2023 - Cur
+                EIC Lab @ Georgia Tech | Sep 2023 - Current
               </p>
               <p className="text-base mb-10 w-96">
                 Optimized custom GraphSAGE models using PyTorch and DGL,
