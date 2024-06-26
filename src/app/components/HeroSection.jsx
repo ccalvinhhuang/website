@@ -23,16 +23,23 @@ const HeroSection = () => {
             Calvin Huang
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            CS Student @{" "}
-            <a
-              href="https://www.gatech.edu/"
-              target="_blank"
-              style={{ color: "#DAA520" }}
-            >
+            Computer Science Student @{" "}
+            <a href="https://www.gatech.edu/" target="_blank" className="link">
               Georgia Tech
-            </a>{" "}
-          </p>
+            </a>
+            <style jsx>{`
+              .link {
+                color: #daa520;
+                text-decoration: none;
+                transition: color 0.3s ease, transform 0.3s ease;
+              }
 
+              .link:hover {
+                color: #ffd700; /* Change to a lighter gold on hover */
+                transform: scale(1.1); /* Slightly enlarge the link */
+              }
+            `}</style>
+          </p>
           <div className="flex items-center justify-center sm:justify-start space-x-4">
             <a
               href="/images/calvin_huang_resume.pdf"
@@ -43,9 +50,41 @@ const HeroSection = () => {
                 Resume
               </button>
             </a>
-            <BsLinkedin color="#a3a3a3" size={25} />
-            <BsGithub color="#a3a3a3" size={25} />
-            <CgMail color="#a3a3a3" size={30} />
+            <div className="icon-container">
+              <a
+                href="https://www.linkedin.com/in/ccalvinhuang"
+                target="_blank"
+                className="icon-link"
+              >
+                <BsLinkedin color="#a3a3a3" size={25} />
+              </a>
+              <a
+                href="https://github.com/ccalvinhhuang"
+                target="_blank"
+                className="icon-link"
+              >
+                <BsGithub color="#a3a3a3" size={25} />
+              </a>
+              <a href="chuang482@gatech.edu" className="icon-link">
+                <CgMail color="#a3a3a3" size={30} />
+              </a>
+              <style jsx>{`
+                .icon-container {
+                  display: flex;
+                  gap: 10px;
+                }
+
+                .icon-link {
+                  color: #a3a3a3;
+                  transition: color 0.3s ease, transform 0.3s ease;
+                }
+
+                .icon-link:hover {
+                  color: #000000; /* Change to a darker color on hover */
+                  transform: scale(1.1); /* Slightly enlarge the icon */
+                }
+              `}</style>
+            </div>
           </div>
         </div>
       </div>
@@ -60,7 +99,7 @@ const HeroSection = () => {
               <p className="text-[#ADB7BE] mb-4">OKSI | Apr 2024 - Current</p>
               <p className="text-base mb-10 w-96">
                 Designed LLM-backed assistant for filling SCIF forms by
-                integrating RAG, LLaMA, AWQ, and LoRA.
+                integrating RAG, LLaMA, AWQ, LoRA.
               </p>
             </div>
             <div className="flex justify-center w-full -mt-10">
