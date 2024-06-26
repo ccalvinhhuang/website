@@ -1,7 +1,19 @@
 import Image from "next/image";
 
-const InternshipItem = ({ title, company, date, description, imageSrc }) => (
-  <div className="text-white mb-10">
+const InternshipItem = ({
+  title,
+  company,
+  date,
+  description,
+  imageSrc,
+  link,
+}) => (
+  <a
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block text-white mb-10"
+  >
     <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48 hover-effect">
       <div>
         <h3 className="text-xl mb-2">{title}</h3>
@@ -29,7 +41,7 @@ const InternshipItem = ({ title, company, date, description, imageSrc }) => (
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       }
     `}</style>
-  </div>
+  </a>
 );
 
 export default InternshipItem;

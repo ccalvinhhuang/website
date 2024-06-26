@@ -16,6 +16,7 @@ const internships = [
     description:
       "Designed LLM-backed assistant for filling SCIF forms by integrating RAG, LLaMA, AWQ, LoRA.",
     imageSrc: "/images/oksi_logo.jpeg",
+    link: "https://oksi.ai", // Example link
   },
   {
     title: "FTTP",
@@ -24,6 +25,7 @@ const internships = [
     description:
       "Selected to explore Jane Street’s trading models through classes, games, and simulations.",
     imageSrc: "/images/jslogocolored.jpeg",
+    link: "https://www.janestreet.com", // Example link
   },
   {
     title: "Machine Learning Intern",
@@ -32,6 +34,7 @@ const internships = [
     description:
       "Optimized custom GraphSAGE models using PyTorch to enhance GNN node classification.",
     imageSrc: "/images/eiclab.png",
+    link: "https://eiclab.scs.gatech.edu/", // Example link
   },
   {
     title: "Data Science Intern",
@@ -40,6 +43,7 @@ const internships = [
     description:
       "Analyzed correlations between AMPA exposure, hormonal blood levels and c-reactive proteins.",
     imageSrc: "/images/ucischoolimage.jpeg",
+    link: "https://faculty.sites.uci.edu/parklab/", // Example link
   },
   {
     title: "Software Engineer Intern",
@@ -48,9 +52,9 @@ const internships = [
     description:
       "Designed a training pipeline for fine-tuning YOLOv5 on custom data with QLoRA.",
     imageSrc: "/images/softcomlab.png",
+    link: "https://github.com/softcom-lab", // Example link
   },
 ];
-
 const HeroSection = () => {
   return (
     <div className="flex flex-col mx-auto">
@@ -144,6 +148,7 @@ const HeroSection = () => {
             date={internship.date}
             description={internship.description}
             imageSrc={internship.imageSrc}
+            link={internship.link}
           />
         ))}
       </div>
