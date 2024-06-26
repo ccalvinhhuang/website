@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
+import ScrollingText from "../components/ScrollingText";
 
 const HeroSection = () => {
   return (
@@ -28,8 +31,8 @@ const HeroSection = () => {
             >
               Georgia Tech
             </a>{" "}
-            | ML Fanatic
           </p>
+
           <div className="flex items-center justify-center sm:justify-start space-x-4">
             <a
               href="/images/calvin_huang_resume.pdf"
@@ -56,11 +59,11 @@ const HeroSection = () => {
               <h3 className="text-xl mb-2">Software Engineer Intern</h3>
               <p className="text-[#ADB7BE] mb-4">OKSI | Apr 2024 - Current</p>
               <p className="text-base mb-10 w-96">
-                Designed an LLM-backed assistant for filling SCIF forms by
-                integrating RAG with LLaMA-3, increasing accuracy by 53%.
+                Designed LLM-backed assistant for filling SCIF forms by
+                integrating RAG, LLaMA, AWQ, and LoRA.
               </p>
             </div>
-            <div className="flex justify-center w-full -mt-20">
+            <div className="flex justify-center w-full -mt-10">
               <Image
                 src="/images/oksi_logo.jpeg"
                 alt="eic image"
@@ -79,11 +82,11 @@ const HeroSection = () => {
                 Jane Street Capital | Mar 2024 - Mar 2024
               </p>
               <p className="text-base mb-10 w-96">
-                1 of 100 undergrads selected to learn about Jane Street’s
-                trading models through classes, games, and simulations.
+                Selected to explore Jane Street’s trading models through
+                classes, games, and simulations.
               </p>
             </div>
-            <div className="flex justify-center w-full -mt-20">
+            <div className="flex justify-center w-full -mt-10">
               <Image
                 src="/images/jslogocolored.jpeg"
                 alt="eic image"
@@ -102,11 +105,11 @@ const HeroSection = () => {
                 EIC Lab @ Georgia Tech | Sep 2023 - Current
               </p>
               <p className="text-base mb-10 w-96">
-                Optimized custom GraphSAGE models using PyTorch and DGL,
-                enhancing GNN node classification accuracy by up to 5%.
+                Optimized custom GraphSAGE models using PyTorch to enhance GNN
+                node classification.
               </p>
             </div>
-            <div className="flex justify-center w-full -mt-20">
+            <div className="flex justify-center w-full -mt-10">
               <Image
                 src="/images/eiclab.png"
                 alt="eic image"
@@ -125,11 +128,11 @@ const HeroSection = () => {
                 Park Lab @ UC Irvine | Aug 2022 - Sep 2023
               </p>
               <p className="text-base mb-10 w-96">
-                Analyzed relationships between glyphosate/AMPA exposure, blood
-                levels of sex hormones and c-reactive proteins.
+                Analyzed correlations between AMPA exposure, hormonal blood
+                levels and c-reactive proteins.
               </p>
             </div>
-            <div className="flex justify-center w-full -mt-20">
+            <div className="flex justify-center w-full -mt-10">
               <Image
                 src="/images/ucischoolimage.jpeg"
                 alt="park image"
@@ -148,11 +151,11 @@ const HeroSection = () => {
                 Softcom Lab | Apr 2023 - Jul 2023
               </p>
               <p className="text-base mb-10 w-96">
-                Migrated a training pipeline from a Keras-based model to a
-                no-code solution for fine-tuning YOLOv5 on custom data.
+                Designed a training pipeline for fine-tuning YOLOv5 on custom
+                data with QLoRA.
               </p>
             </div>
-            <div className="flex justify-center w-full -mt-20">
+            <div className="flex justify-center w-full -mt-10">
               <Image
                 src="/images/softcomlab.png"
                 alt="softcomlab image"
@@ -164,7 +167,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <h2 className="text-white text-3xl mb-4 mx-auto text-center">Projects</h2>
     </div>
   );
 };
