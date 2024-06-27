@@ -7,6 +7,7 @@ import { BsGithub } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
 import ScrollingText from "../components/ScrollingText";
 import InternshipItem from "../components/InternshipItem";
+import { Link as ScrollLink } from "react-scroll"; // Import Link from react-scroll
 
 const internships = [
   {
@@ -16,7 +17,7 @@ const internships = [
     description:
       "Designed LLM-backed assistant for filling SCIF forms by integrating RAG, LLaMA, AWQ, LoRA.",
     imageSrc: "/images/oksi_logo.jpeg",
-    link: "https://oksi.ai", // Example link
+    link: "https://oksi.ai",
   },
   {
     title: "FTTP",
@@ -25,7 +26,7 @@ const internships = [
     description:
       "Selected to explore Jane Street’s trading models through classes, games, and simulations.",
     imageSrc: "/images/jslogocolored.jpeg",
-    link: "https://www.janestreet.com", // Example link
+    link: "https://www.janestreet.com",
   },
   {
     title: "Machine Learning Intern",
@@ -34,7 +35,7 @@ const internships = [
     description:
       "Optimized custom GraphSAGE models using PyTorch to enhance GNN node classification.",
     imageSrc: "/images/eiclab.png",
-    link: "https://eiclab.scs.gatech.edu/", // Example link
+    link: "https://eiclab.scs.gatech.edu/",
   },
   {
     title: "Data Science Intern",
@@ -43,7 +44,7 @@ const internships = [
     description:
       "Analyzed correlations between AMPA exposure, hormonal blood levels and c-reactive proteins.",
     imageSrc: "/images/ucischoolimage.jpeg",
-    link: "https://faculty.sites.uci.edu/parklab/", // Example link
+    link: "https://faculty.sites.uci.edu/parklab/",
   },
   {
     title: "Software Engineer Intern",
@@ -52,9 +53,10 @@ const internships = [
     description:
       "Designed a training pipeline for fine-tuning YOLOv5 on custom data with QLoRA.",
     imageSrc: "/images/softcomlab.png",
-    link: "https://github.com/softcom-lab", // Example link
+    link: "https://github.com/softcom-lab",
   },
 ];
+
 const HeroSection = () => {
   return (
     <div className="flex flex-col mx-auto">
@@ -136,7 +138,10 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <h2 className="text-white text-3xl mb-4 mt-10 mx-auto text-center">
+      <h2
+        id="experience"
+        className="text-white text-3xl mb-4 mt-10 mx-auto text-center"
+      >
         Experience
       </h2>
       <div className="mt-10">
