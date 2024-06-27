@@ -28,7 +28,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href={"#projects"}
+                href="#projects"
                 className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-l rounded md:p-0 hover:"
               >
                 Projects
@@ -47,7 +47,7 @@ const Navbar = () => {
                 href={"#skills"}
                 className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-l rounded md:p-0 hover:"
               >
-                Skills
+                Blog
               </Link>
             </li>
           </ul>
