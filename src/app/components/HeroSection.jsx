@@ -5,7 +5,6 @@ import Image from "next/image";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
-import ScrollingText from "../components/ScrollingText";
 import InternshipItem from "../components/InternshipItem";
 import { Link as ScrollLink } from "react-scroll"; // Import Link from react-scroll
 
