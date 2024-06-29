@@ -70,7 +70,7 @@ const HeroSection = () => {
             <h1 className="text-white mb-2 text-xl sm:text-2xl lg:text-3xl">
               Calvin Huang
             </h1>
-            <p className="text-[#ADB7BE] text-xs sm:text-sm lg:text-sm mb-4">
+            <p className="text-[#ADB7BE] text-md sm:text-md lg:text-md mb-4">
               Computer Science Student @{" "}
               <a
                 href="https://www.gatech.edu/"
