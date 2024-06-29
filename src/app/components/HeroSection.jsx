@@ -2,11 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
-import InternshipItem from "../components/InternshipItem";
-import { Link as ScrollLink } from "react-scroll"; // Import Link from react-scroll
+import InternshipItem from "./InternshipItem";
 
 const internships = [
   {
@@ -58,104 +56,121 @@ const internships = [
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col mx-auto">
-      <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-24">
-        <Image
-          src="/images/calvin.jpeg"
-          alt="hero image"
-          className="rounded-full bg-black"
-          width={200}
-          height={200}
-        />
-        <div className="text-center sm:text-left mt-5">
-          <h1 className="text-white mb-4 text-2xl sm:text-3xl lg:text-4xl">
-            Calvin Huang
-          </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            Computer Science Student @{" "}
-            <a href="https://www.gatech.edu/" target="_blank" className="link">
-              Georgia Tech
-            </a>
-            <style jsx>{`
-              .link {
-                color: #daa520;
-                text-decoration: none;
-                transition: color 0.3s ease, transform 0.3s ease;
-              }
-
-              .link:hover {
-                color: #ffd700; /* Change to a lighter gold on hover */
-                transform: scale(1.1); /* Slightly enlarge the link */
-              }
-            `}</style>
-          </p>
-          <div className="flex items-center justify-center sm:justify-start space-x-4">
-            <a
-              href="/images/calvin_huang_resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
-                Resume
-              </button>
-            </a>
-            <div className="icon-container">
-              <a
-                href="https://www.linkedin.com/in/ccalvinhuang"
-                target="_blank"
-                className="icon-link"
-              >
-                <BsLinkedin color="#a3a3a3" size={25} />
-              </a>
-              <a
-                href="https://github.com/ccalvinhhuang"
-                target="_blank"
-                className="icon-link"
-              >
-                <BsGithub color="#a3a3a3" size={25} />
-              </a>
-              <a href="mailto:chuang482@gatech.edu" className="icon-link">
-                <CgMail color="#a3a3a3" size={30} />
-              </a>
-              <style jsx>{`
-                .icon-container {
-                  display: flex;
-                  gap: 10px;
-                }
-
-                .icon-link {
-                  color: #a3a3a3;
-                  transition: color 0.3s ease, transform 0.3s ease;
-                }
-
-                .icon-link:hover {
-                  color: #000000; /* Change to a darker color on hover */
-                  transform: scale(1.1); /* Slightly enlarge the icon */
-                }
-              `}</style>
+    <div className="scale-down-wrapper">
+      <div className="scale-down-container">
+        <div className="flex flex-col mx-auto">
+          <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-24">
+            <Image
+              src="/images/calvin.jpeg"
+              alt="hero image"
+              className="rounded-full bg-black"
+              width={200}
+              height={200}
+            />
+            <div className="text-center sm:text-left mt-5">
+              <h1 className="text-white mb-4 text-2xl sm:text-3xl lg:text-4xl">
+                Calvin Huang
+              </h1>
+              <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
+                Computer Science Student @{" "}
+                <a
+                  href="https://www.gatech.edu/"
+                  target="_blank"
+                  className="link"
+                >
+                  Georgia Tech
+                </a>
+              </p>
+              <div className="flex items-center justify-center sm:justify-start space-x-4">
+                <a
+                  href="/images/calvin_huang_resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
+                    Resume
+                  </button>
+                </a>
+                <div className="icon-container">
+                  <a
+                    href="https://www.linkedin.com/in/ccalvinhuang"
+                    target="_blank"
+                    className="icon-link"
+                  >
+                    <BsLinkedin color="#a3a3a3" size={25} />
+                  </a>
+                  <a
+                    href="https://github.com/ccalvinhhuang"
+                    target="_blank"
+                    className="icon-link"
+                  >
+                    <BsGithub color="#a3a3a3" size={25} />
+                  </a>
+                  <a href="mailto:chuang482@gatech.edu" className="icon-link">
+                    <CgMail color="#a3a3a3" size={30} />
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
+          <h2
+            id="experience"
+            className="text-white text-3xl mb-4 mt-10 mx-auto text-center"
+          >
+            Experience
+          </h2>
+          <div className="mt-10">
+            {internships.map((internship, index) => (
+              <InternshipItem
+                key={index}
+                title={internship.title}
+                company={internship.company}
+                date={internship.date}
+                description={internship.description}
+                imageSrc={internship.imageSrc}
+                link={internship.link}
+              />
+            ))}
           </div>
         </div>
       </div>
-      <h2
-        id="experience"
-        className="text-white text-3xl mb-4 mt-10 mx-auto text-center"
-      >
-        Experience
-      </h2>
-      <div className="mt-10">
-        {internships.map((internship, index) => (
-          <InternshipItem
-            key={index}
-            title={internship.title}
-            company={internship.company}
-            date={internship.date}
-            description={internship.description}
-            imageSrc={internship.imageSrc}
-            link={internship.link}
-          />
-        ))}
-      </div>
+      <style jsx>{`
+        .scale-down-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          overflow: auto;
+        }
+        .scale-down-container {
+          transform: scale(0.8); /* Adjust this value as needed */
+          transform-origin: top center; /* Adjust the origin if needed */
+        }
+        .link {
+          color: #daa520;
+          text-decoration: none;
+          transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .link:hover {
+          color: #ffd700; /* Change to a lighter gold on hover */
+          transform: scale(1.1); /* Slightly enlarge the link */
+        }
+
+        .icon-container {
+          display: flex;
+          gap: 10px;
+        }
+
+        .icon-link {
+          color: #a3a3a3;
+          transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .icon-link:hover {
+          color: #000000; /* Change to a darker color on hover */
+          transform: scale(1.1); /* Slightly enlarge the icon */
+        }
+      `}</style>
     </div>
   );
 };

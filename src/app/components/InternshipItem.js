@@ -26,8 +26,8 @@ const InternshipItem = ({
         <Image
           src={imageSrc}
           alt={`${company} image`}
-          width={100}
-          height={100}
+          width={75}
+          height={50}
           className="mx-auto"
         />
       </div>
