@@ -12,17 +12,20 @@ const InternshipItem = ({
     href={link}
     target="_blank"
     rel="noopener noreferrer"
-    className="block text-white mb-10"
+    className="block text-white mb-8"
   >
-    <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-48 hover-effect">
+    <div
+      className="flex flex-col sm:flex-row items-center gap-400 sm:gap-16 hover-effect"
+      style={{ marginLeft: "9%" }}
+    >
       <div>
-        <h3 className="text-xl mb-2">{title}</h3>
-        <p className="text-[#ADB7BE] mb-4">
+        <h3 className="text-base mb-1">{title}</h3>
+        <p className="text-[#ADB7BE] text-xs mb-1">
           {company} | {date}
         </p>
-        <p className="text-base mb-10 w-96">{description}</p>
+        <p className="text-xs mb-4 w-80">{description}</p>
       </div>
-      <div className="flex justify-center w-full -mt-10">
+      <div className="flex justify-center w-full -mt-2">
         <Image
           src={imageSrc}
           alt={`${company} image`}
