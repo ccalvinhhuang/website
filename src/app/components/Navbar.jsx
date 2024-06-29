@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="flex flex-wrap items-center justify-between p-8">
-        <Link href={"/"} className="text-2xl text-white font-semibold">
+        <Link href={"/"} className="text-xl text-white font-semibold">
           Calvin Huang
         </Link>
         <div className="menu hidden md:block md:w-auto" id="navbar">
@@ -13,7 +13,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"#about"}
-                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-l rounded md:p-0 hover:"
+                className="block py-1 pl-2 pr-3 text-[#ADB7BE] text-sm rounded md:p-0 hover:text-white"
               >
                 Home
               </Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"#experience"}
-                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-l rounded md:p-0 hover:"
+                className="block py-1 pl-2 pr-3 text-[#ADB7BE] text-sm rounded md:p-0 hover:text-white"
               >
                 Experience
               </Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#projects"
-                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-l rounded md:p-0 hover:"
+                className="block py-1 pl-2 pr-3 text-[#ADB7BE] text-sm rounded md:p-0 hover:text-white"
               >
                 Projects
               </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"#honors"}
-                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-l rounded md:p-0 hover:"
+                className="block py-1 pl-2 pr-3 text-[#ADB7BE] text-sm rounded md:p-0 hover:text-white"
               >
                 Honors
               </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"#skills"}
-                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-l rounded md:p-0 hover:"
+                className="block py-1 pl-2 pr-3 text-[#ADB7BE] text-sm rounded md:p-0 hover:text-white"
               >
                 Blog
               </Link>
