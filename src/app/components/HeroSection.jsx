@@ -57,8 +57,8 @@ const internships = [
 const HeroSection = () => {
   return (
     <div className="scale-down-wrapper">
-      <div className="flex flex-col mx-auto">
-        <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-24">
+      <div className="flex flex-col items-center mx-auto">
+        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-10">
           <Image
             src="/images/calvin.jpeg"
             alt="hero image"
@@ -66,8 +66,8 @@ const HeroSection = () => {
             width={150}
             height={150}
           />
-          <div className="text-center sm:text-left mt-5">
-            <h1 className="text-white mb-4 text-l sm:text-2xl lg:text-2xl">
+          <div className="text-center sm:text-left mt-4 sm:mt-0">
+            <h1 className="text-white mb-2 text-xl sm:text-2xl lg:text-3xl">
               Calvin Huang
             </h1>
             <p className="text-[#ADB7BE] text-xs sm:text-sm lg:text-sm mb-4">
@@ -80,13 +80,13 @@ const HeroSection = () => {
                 Georgia Tech
               </a>
             </p>
-            <div className="flex items-center justify-center sm:justify-start space-x-4">
+            <div className="flex items-center justify-center sm:justify-start space-x-3">
               <a
                 href="/images/calvin_huang_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="px-4 py-2 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
+                <button className="px-3 py-2 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white text-xs sm:text-xs">
                   Resume
                 </button>
               </a>
@@ -96,17 +96,17 @@ const HeroSection = () => {
                   target="_blank"
                   className="icon-link"
                 >
-                  <BsLinkedin color="#a3a3a3" size={20} />
+                  <BsLinkedin color="#a3a3a3" size={18} />
                 </a>
                 <a
                   href="https://github.com/ccalvinhhuang"
                   target="_blank"
                   className="icon-link"
                 >
-                  <BsGithub color="#a3a3a3" size={20} />
+                  <BsGithub color="#a3a3a3" size={18} />
                 </a>
                 <a href="mailto:chuang482@gatech.edu" className="icon-link">
-                  <CgMail color="#a3a3a3" size={20} />
+                  <CgMail color="#a3a3a3" size={22} />
                 </a>
               </div>
             </div>
