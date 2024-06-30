@@ -111,6 +111,12 @@ const projects = [
     ],
   },
   {
+    title: "NE-GraphSAGE: Memory-Efficient GNNs with Neighbor Ensemble",
+    description:
+      "Integrating neighbor ensemble into GraphSAGE with novel dropout strategies and MLP distributions to achieve higher accuracy.",
+    tags: ["PyTorch", "Optuna", "Docker", "DGL", "CUDA"],
+  },
+  {
     title: "ScribeAI",
     description:
       "A HIPAA-Compliant interface converting physical healthcare documents into Electronic Health Records with OCR and GPT-3.5.",
@@ -123,12 +129,6 @@ const projects = [
       "NodeJS",
       "Tensorflow",
     ],
-  },
-  {
-    title: "Memory-Efficient GNN Training with Neighbor Ensemble",
-    description:
-      "Integrating neighbor ensemble into GraphSAGE with novel dropout strategies and MLP distributions to achieve higher accuracy.",
-    tags: ["PyTorch", "Optuna", "Docker", "DGL", "CUDA"],
   },
   {
     title: "Personal Website",
