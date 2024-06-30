@@ -93,15 +93,15 @@ const projects = [
   {
     title: "Ruby",
     description:
-      "A Google Chrome extension assisting Cantonese elders with navigating the English web via queries to a fine-tuned Whisper and LLaMa model.",
+      "A Google Chrome extension which uses Whisper and Llama 3 to help Cantonese elders navigate the English web.",
     tags: ["PyTorch", "PostgreSQL", "LoRA", "Unsloth", "Javascript", "Docker"],
   },
   {
     title: "Ariel Chat",
     description:
-      "Augmented LLaMA-3 with AWQ and RAG (dragon multiturn encoder/tokenizer) for Turbo Tax-esque interface for filling out a DCSA 147.",
+      "Augmented Llama 3 with AWQ and RAG (dragon multiturn encoder/tokenizer) for Turbo Tax-esque interface for filling out a DCSA 147.",
     tags: [
-      "Pytorch",
+      "PyTorch",
       "PostgreSQL",
       "Docker",
       "Huggingface",
@@ -113,7 +113,7 @@ const projects = [
   {
     title: "NE-GraphSAGE: Memory-Efficient GNNs with Neighbor Ensemble",
     description:
-      "Integrating neighbor ensemble into GraphSAGE with novel dropout strategies and MLP distributions to achieve higher accuracy.",
+      "Integrating neighbor ensemble, novel dropout strategies and MLP distributions within the GraphSAGE framework to achieve greater inference.",
     tags: ["PyTorch", "Optuna", "Docker", "DGL", "CUDA"],
   },
   {
@@ -133,7 +133,7 @@ const projects = [
   {
     title: "Personal Website",
     description:
-      "The absolutely sexy website you are currently viewing. Built with crazy amounts of front-end dev from scratch, deployed on Vercel.",
+      "Personal website is built with ungodly amounts of front-end dev (and tears) from scratch, deployed on Vercel.",
     tags: ["NextJS", "TailwindCSS", "GraphQL", "PostgreSQL"],
   },
   {
