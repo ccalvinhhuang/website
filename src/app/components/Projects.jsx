@@ -84,6 +84,13 @@ const projects = [
       "Integrating neighbor ensemble into GraphSAGE with novel dropout strategies and MLP distributions to achieve higher accuracy.",
     tags: ["Python", "MySQL", "Flask", "HTML", "CSS", "JavaScript"],
   },
+  {
+    title:
+      "Association of Glyphosate and AMPA  with Kidney Function and Hormonal Markers.",
+    description:
+      "Integrating neighbor ensemble into GraphSAGE with novel dropout strategies and MLP distributions to achieve higher accuracy.",
+    tags: ["Python", "MySQL", "Flask", "HTML", "CSS", "JavaScript"],
+  },
 ];
 
 function ProjectCard({ title, description, tags }) {
@@ -108,7 +115,7 @@ export default function Projects() {
       <Head>
         <title>Projects</title>
       </Head>
-      <h1 style={titleStyle}>Other Projects</h1>
+      <h1 style={titleStyle}>Projects</h1>
       <div style={cardContainerStyle}>
         {projects.map((project) => (
           <ProjectCard
