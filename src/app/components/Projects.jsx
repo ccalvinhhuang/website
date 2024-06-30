@@ -88,7 +88,14 @@ const projects = [
     title:
       "Association of Glyphosate and AMPA  with Kidney Function and Hormonal Markers.",
     description:
-      "Integrating neighbor ensemble into GraphSAGE with novel dropout strategies and MLP distributions to achieve higher accuracy.",
+      "Assessed relationships between  glyphosate and AMPA concentrations and biomarkers such as sex hormones and hsCRP via Spearman's, ANOVA, and Chi-Squared.",
+    tags: ["Python", "MySQL", "Flask", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title:
+      "Generative Approach to the Automation of Artificial Intelligence Applications",
+    description:
+      "Developed a training pipeline for a ResNet model using TensorFlow Lite, enabling training and inference on mobile devices through cloud integration.",
     tags: ["Python", "MySQL", "Flask", "HTML", "CSS", "JavaScript"],
   },
 ];
