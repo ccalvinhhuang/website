@@ -16,8 +16,6 @@ const containerStyle = {
 const titleStyle = {
   fontSize: "1.5em",
   marginBottom: "10px",
-  width: "100%",
-  maxWidth: "500px", // Match this with cardContainerStyle maxWidth
   boxSizing: "border-box",
 };
 
