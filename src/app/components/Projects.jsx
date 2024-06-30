@@ -24,7 +24,7 @@ const cardContainerStyle = {
 };
 
 const cardStyle = {
-  backgroundColor: "#1a1a1a",
+  backgroundColor: "#000000",
   padding: "10px",
   margin: "5px",
   borderRadius: "8px",
