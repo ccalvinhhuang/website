@@ -4,11 +4,10 @@ import { Container } from "postcss";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 
-export default function Home() {
+export default function ProjectPage() {
   return (
     <main className="flex flex-col bg-black">
       <Navbar />
-      <HeroSection />
       <Projects />
     </main>
   );
