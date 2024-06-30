@@ -58,7 +58,7 @@ const internships = [
     description:
       "Taught software fundamentals and coding frameworks (Javascript, Python, Unity).  ",
     imageSrc: "/images/codeninjas.jpg",
-    link: "https://github.com/softcom-lab",
+    link: "https://www.codeninjas.com/",
   },
 ];
 
