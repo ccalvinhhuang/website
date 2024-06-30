@@ -16,7 +16,7 @@ const InternshipItem = ({
   >
     <div
       className="flex flex-col sm:flex-row items-center gap-400 sm:gap-16 hover-effect"
-      style={{ marginLeft: "2%" }}
+      style={{ marginLeft: "%" }}
     >
       <div>
         <h3 className="text-base mb-1">{title}</h3>

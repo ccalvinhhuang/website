@@ -1,4 +1,7 @@
+"use client";
+
 import Head from "next/head";
+import { useState } from "react";
 
 const containerStyle = {
   display: "flex",
@@ -11,38 +14,47 @@ const containerStyle = {
 };
 
 const titleStyle = {
-  fontSize: "1.5em",
+  fontSize: "1.2em",
   marginBottom: "10px",
+  width: "100%",
+  maxWidth: "500px", // Match this with cardContainerStyle maxWidth
+  paddingLeft: "8px", // Same as card padding
+  boxSizing: "border-box",
 };
 
 const cardContainerStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  width: "100%",
-  maxWidth: "800px",
+  width: "80%",
+  maxWidth: "500px",
 };
 
 const cardStyle = {
-  backgroundColor: "#000000",
-  padding: "10px",
+  padding: "8px",
   margin: "5px",
   borderRadius: "8px",
   boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
   color: "white",
   width: "100%",
-  maxWidth: "700px",
+  maxWidth: "600px",
   boxSizing: "border-box",
+  transition: "transform 0.3s ease-in-out",
+};
+
+const cardHoverStyle = {
+  transform: "scale(1.05)",
 };
 
 const projectTitleStyle = {
-  fontSize: "1em",
+  fontSize: "0.9em",
   marginBottom: "5px",
 };
 
 const projectDescriptionStyle = {
-  fontSize: "0.9em",
+  fontSize: "0.8em",
   marginBottom: "5px",
+  color: "#d3d3d3", // Very light gray
 };
 
 const tagsStyle = {
@@ -56,7 +68,7 @@ const tagStyle = {
   padding: "2px 6px",
   margin: "2px",
   borderRadius: "3px",
-  fontSize: "0.8em",
+  fontSize: "0.7em",
 };
 
 const projects = [
@@ -92,7 +104,7 @@ const projects = [
   {
     title: "ScribeAI",
     description:
-      "[1st Place Overall @ HackGT X] A HIPAA-Compliant interface converting physical healthcare documents into Electronic Health Records with OCR and GPT-3.5.",
+      "A HIPAA-Compliant interface converting physical healthcare documents into Electronic Health Records with OCR and GPT-3.5.",
     tags: [
       "NextJS",
       "PostgreSQL",
@@ -104,7 +116,7 @@ const projects = [
     ],
   },
   {
-    title: "NE-GraphSAGE: Memory Efficient GNN Training with Neighbor Ensemble",
+    title: "NE-GraphSAGE: Memory-Efficient GNN with Neighbor Ensemble",
     description:
       "Integrating neighbor ensemble into GraphSAGE with novel dropout strategies and MLP distributions to achieve higher accuracy.",
     tags: ["PyTorch", "Optuna", "Docker", "DGL", "CUDA"],
@@ -113,25 +125,17 @@ const projects = [
     title: "Personal Website",
     description:
       "The absolutely sexy website you are currently viewing. Built with crazy amounts of front-end dev from scratch, deployed on Vercel.",
-    tags: [
-      "NextJS",
-      "TailwindCSS",
-      "GraphQL",
-      "NodeJS",
-      "Vercel",
-      "PostgreSQL",
-    ],
+    tags: ["NextJS", "TailwindCSS", "Docker", "DGL", "CUDA"],
   },
   {
-    title:
-      "Association of Glyphosate and AMPA  with Kidney Function and Hormonal Markers.",
+    title: "Association of Glyphosate and AMPA with Hormonal Markers",
     description:
-      "Assessed relationships between  glyphosate and AMPA concentrations and biomarkers such as sex hormones and hsCRP via Spearman's, ANOVA, and Chi-Squared.",
+      "Assessed relationships between glyphosate, AMPA concentrations and biomarkers such as sex hormones and hsCRP via Spearman's, ANOVA, and Chi-Squared.",
     tags: ["R", "Javascript", "Python"],
   },
   {
     title:
-      "Generative Approach to the Automation of Artificial Intelligence Applications",
+      "Generative Approach to the Automation of Deep Learning Applications",
     description:
       "Developed a training pipeline for ResNet50 using TensorFlow Lite, enabling training and inference on mobile devices through cloud integration.",
     tags: ["Tensorflow Lite", "AWS EC2", "Flask", "MySQL", "REST"],
@@ -139,8 +143,14 @@ const projects = [
 ];
 
 function ProjectCard({ title, description, tags }) {
+  const [hover, setHover] = useState(false);
+
   return (
-    <div style={cardStyle}>
+    <div
+      style={{ ...cardStyle, ...(hover ? cardHoverStyle : {}) }}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
       <h2 style={projectTitleStyle}>{title}</h2>
       <p style={projectDescriptionStyle}>{description}</p>
       <div style={tagsStyle}>
