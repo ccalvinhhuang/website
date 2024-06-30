@@ -28,6 +28,36 @@ const cardContainerStyle = {
   alignItems: "center",
   width: "80%",
   maxWidth: "500px",
+  position: "relative",
+};
+
+const timelineStyle = {
+  position: "absolute",
+  left: "10px",
+  top: "0",
+  bottom: "0",
+  width: "2px",
+  backgroundColor: "#555",
+  zIndex: "0",
+};
+
+const cardWrapperStyle = {
+  display: "flex",
+  alignItems: "center",
+  width: "100%",
+  marginBottom: "20px", // Increase vertical spacing
+  position: "relative",
+  zIndex: "1",
+};
+
+const dotStyle = {
+  position: "absolute",
+  left: "-14px",
+  width: "10px",
+  height: "10px",
+  borderRadius: "50%",
+  backgroundColor: "#fff",
+  zIndex: "1",
 };
 
 const cardStyle = {
@@ -147,18 +177,21 @@ function ProjectCard({ title, description, tags }) {
 
   return (
     <div
-      style={{ ...cardStyle, ...(hover ? cardHoverStyle : {}) }}
+      style={cardWrapperStyle}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <h2 style={projectTitleStyle}>{title}</h2>
-      <p style={projectDescriptionStyle}>{description}</p>
-      <div style={tagsStyle}>
-        {tags.map((tag) => (
-          <span key={tag} style={tagStyle}>
-            {tag}
-          </span>
-        ))}
+      <div style={dotStyle}></div>
+      <div style={{ ...cardStyle, ...(hover ? cardHoverStyle : {}) }}>
+        <h2 style={projectTitleStyle}>{title}</h2>
+        <p style={projectDescriptionStyle}>{description}</p>
+        <div style={tagsStyle}>
+          {tags.map((tag) => (
+            <span key={tag} style={tagStyle}>
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -172,6 +205,7 @@ export default function Projects() {
       </Head>
       <h1 style={titleStyle}>Projects</h1>
       <div style={cardContainerStyle}>
+        <div style={timelineStyle}></div>
         {projects.map((project) => (
           <ProjectCard
             key={project.title}
