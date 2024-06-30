@@ -96,15 +96,7 @@ const projects = [
     title: "Ruby",
     description:
       "A Google Chrome extension assisting Cantonese elders with navigating the English web via queries to a fine-tuned Whisper and LLaMa model.",
-    tags: [
-      "PyTorch",
-      "PostgreSQL",
-      "LLaMA",
-      "LoRA",
-      "Unsloth",
-      "Javascript",
-      "Docker",
-    ],
+    tags: ["PyTorch", "PostgreSQL", "LoRA", "Unsloth", "Javascript", "Docker"],
   },
   {
     title: "Ariel Chat",
@@ -144,7 +136,7 @@ const projects = [
     title: "Personal Website",
     description:
       "The absolutely sexy website you are currently viewing. Built with crazy amounts of front-end dev from scratch, deployed on Vercel.",
-    tags: ["NextJS", "TailwindCSS", "Docker", "DGL", "CUDA"],
+    tags: ["NextJS", "TailwindCSS", "GraphQL", "PostgreSQL"],
   },
   {
     title: "Association of Glyphosate and AMPA with Hormonal Markers",
@@ -156,7 +148,14 @@ const projects = [
     title: "Generative Approach to Automation of Deep Learning Applications",
     description:
       "Developed a training pipeline for ResNet50 using TensorFlow Lite, enabling inference on mobile devices through cloud integration.",
-    tags: ["Tensorflow Lite", "AWS EC2", "Flask", "MySQL", "REST"],
+    tags: [
+      "Tensorflow Lite",
+      "AWS EC2",
+      "Flask",
+      "MySQL",
+      "REST",
+      "Andriod SDK",
+    ],
   },
 ];
 
