@@ -5,7 +5,6 @@ import Image from "next/image";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
 import InternshipItem from "./InternshipItem";
-
 const internships = [
   {
     title: "Software Engineer Intern",
@@ -50,6 +49,15 @@ const internships = [
     description:
       "Designed a training pipeline for fine-tuning YOLOv5 on custom data with QLoRA.",
     imageSrc: "/images/softcomlab.png",
+    link: "https://github.com/softcom-lab",
+  },
+  {
+    title: "Coding Instructor",
+    company: "Code Ninjas",
+    date: "Jan 2023 - Aug 2023",
+    description:
+      "Taught software fundamentals and coding frameworks (Javascript, Python, Unity).  ",
+    imageSrc: "/images/codeninjas.jpg",
     link: "https://github.com/softcom-lab",
   },
 ];
@@ -166,8 +174,8 @@ const HeroSection = () => {
         }
 
         .icon-link:hover {
-          color: #000000; /* Change to a darker color on hover */
-          transform: scale(1.1); /* Slightly enlarge the icon */
+          color: #000000;
+          transform: scale(1.1);
         }
       `}</style>
     </div>

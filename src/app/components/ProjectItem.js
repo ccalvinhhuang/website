@@ -1,13 +1,6 @@
 import Image from "next/image";
 
-const InternshipItem = ({
-  title,
-  company,
-  date,
-  description,
-  imageSrc,
-  link,
-}) => (
+const ProjectItem = ({ title, company, date, description, link }) => (
   <a
     href={link}
     target="_blank"
@@ -25,15 +18,6 @@ const InternshipItem = ({
         </p>
         <p className="text-xs mb-4 w-80">{description}</p>
       </div>
-      <div className="flex justify-center w-full -mt-2">
-        <Image
-          src={imageSrc}
-          alt={`${company} image`}
-          width={75}
-          height={50}
-          className="mx-auto"
-        />
-      </div>
     </div>
     <style jsx>{`
       .hover-effect {
@@ -47,4 +31,4 @@ const InternshipItem = ({
   </a>
 );
 
-export default InternshipItem;
+export default ProjectItem;
