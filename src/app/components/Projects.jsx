@@ -14,26 +14,25 @@ const containerStyle = {
 };
 
 const titleStyle = {
-  fontSize: "1.2em",
+  fontSize: "1.5em",
   marginBottom: "10px",
   width: "100%",
   maxWidth: "500px", // Match this with cardContainerStyle maxWidth
-  paddingLeft: "8px", // Same as card padding
   boxSizing: "border-box",
 };
 
 const cardContainerStyle = {
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
+  alignItems: "flex-start",
   width: "80%",
-  maxWidth: "500px",
+  maxWidth: "550px",
   position: "relative",
 };
 
 const timelineStyle = {
   position: "absolute",
-  left: "10px",
+  left: "0px",
   top: "0",
   bottom: "0",
   width: "2px",
@@ -45,18 +44,8 @@ const cardWrapperStyle = {
   display: "flex",
   alignItems: "center",
   width: "100%",
-  marginBottom: "20px", // Increase vertical spacing
+  marginBottom: "30px", // Increase vertical spacing
   position: "relative",
-  zIndex: "1",
-};
-
-const dotStyle = {
-  position: "absolute",
-  left: "-14px",
-  width: "10px",
-  height: "10px",
-  borderRadius: "50%",
-  backgroundColor: "#fff",
   zIndex: "1",
 };
 
@@ -70,6 +59,7 @@ const cardStyle = {
   maxWidth: "600px",
   boxSizing: "border-box",
   transition: "transform 0.3s ease-in-out",
+  marginLeft: "20px", // Move the card slightly to the right
 };
 
 const cardHoverStyle = {
@@ -77,7 +67,7 @@ const cardHoverStyle = {
 };
 
 const projectTitleStyle = {
-  fontSize: "0.9em",
+  fontSize: "1em",
   marginBottom: "5px",
 };
 
@@ -105,7 +95,7 @@ const projects = [
   {
     title: "Ruby",
     description:
-      "A Google Chrome extension which helps Cantonese-speaking elders navigate the English web via queries to a fine-tuned Whisper and LLaMa model.",
+      "A Google Chrome extension assisting Cantonese elders with navigating the English web via queries to a fine-tuned Whisper and LLaMa model.",
     tags: [
       "PyTorch",
       "PostgreSQL",
@@ -119,12 +109,11 @@ const projects = [
   {
     title: "Ariel Chat",
     description:
-      "Augmented LLaMA-3 with AWQ and RAG (dragon multiturn encoder/tokenizer) to develop a Turbo Tax-esque interface for users to fill out a DCSA 147.",
+      "Augmented LLaMA-3 with AWQ and RAG (dragon multiturn encoder/tokenizer) for Turbo Tax-esque interface for filling out a DCSA 147.",
     tags: [
       "Pytorch",
       "PostgreSQL",
       "Docker",
-      "AWQ",
       "Huggingface",
       "NATS",
       "Protobuffs",
@@ -146,7 +135,7 @@ const projects = [
     ],
   },
   {
-    title: "NE-GraphSAGE: Memory-Efficient GNN with Neighbor Ensemble",
+    title: "Memory-Efficient GNN Training with Neighbor Ensemble",
     description:
       "Integrating neighbor ensemble into GraphSAGE with novel dropout strategies and MLP distributions to achieve higher accuracy.",
     tags: ["PyTorch", "Optuna", "Docker", "DGL", "CUDA"],
@@ -160,14 +149,13 @@ const projects = [
   {
     title: "Association of Glyphosate and AMPA with Hormonal Markers",
     description:
-      "Assessed relationships between glyphosate, AMPA concentrations and biomarkers such as sex hormones and hsCRP via Spearman's, ANOVA, and Chi-Squared.",
+      "Assessed relationships between glyphosate, AMPA concentrations and biomarkers via Spearman's, ANOVA, and Chi-Squared.",
     tags: ["R", "Javascript", "Python"],
   },
   {
-    title:
-      "Generative Approach to the Automation of Deep Learning Applications",
+    title: "Generative Approach to Automation of Deep Learning Applications",
     description:
-      "Developed a training pipeline for ResNet50 using TensorFlow Lite, enabling training and inference on mobile devices through cloud integration.",
+      "Developed a training pipeline for ResNet50 using TensorFlow Lite, enabling inference on mobile devices through cloud integration.",
     tags: ["Tensorflow Lite", "AWS EC2", "Flask", "MySQL", "REST"],
   },
 ];
@@ -181,7 +169,6 @@ function ProjectCard({ title, description, tags }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <div style={dotStyle}></div>
       <div style={{ ...cardStyle, ...(hover ? cardHoverStyle : {}) }}>
         <h2 style={projectTitleStyle}>{title}</h2>
         <p style={projectDescriptionStyle}>{description}</p>
