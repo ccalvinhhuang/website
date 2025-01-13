@@ -91,15 +91,15 @@ const tagStyle = {
 
 const projects = [
   {
-    title: "Ruby",
+    title: "GoatSquad",
     description:
-      "A Google Chrome extension which uses Whisper and Llama 3 to help Cantonese elders navigate the English web.",
-    tags: ["PyTorch", "PostgreSQL", "LoRA", "Unsloth", "Javascript", "Docker"],
+      "A personalized MLB news feed that delivers AI-powered updates about your favorite team and player.",
+    tags: ["React", "PostgreSQL", "Python", "Flask", "Javascript", "Docker"],
   },
   {
     title: "Ariel Chat",
     description:
-      "Augmented Llama 3 with AWQ and RAG (dragon multiturn encoder/tokenizer) for Turbo Tax-esque interface for filling out a DCSA 147.",
+      "Augmenting LLAMA with AWQ and RAG (dragon multiturn encoder/tokenizer) for Turbo Tax-esque interface for filling out a DCSA 147.",
     tags: [
       "PyTorch",
       "PostgreSQL",
@@ -111,7 +111,7 @@ const projects = [
     ],
   },
   {
-    title: "NE-GraphSAGE: Memory-Efficient GNNs with Neighbor Ensemble",
+    title: "NE-GraphSAGE",
     description:
       "Integrating neighbor ensemble, novel dropout strategies and MLP distributions within the GraphSAGE framework to achieve greater inference.",
     tags: ["PyTorch", "Optuna", "Docker", "DGL", "CUDA"],
@@ -119,7 +119,7 @@ const projects = [
   {
     title: "ScribeAI",
     description:
-      "A HIPAA-Compliant interface converting physical healthcare documents into Electronic Health Records with OCR and GPT-3.5.",
+      "A HIPAA-Compliant interface converting physical healthcare documents into Electronic Health Records with OCR and LLMs.",
     tags: [
       "NextJS",
       "PostgreSQL",
@@ -133,7 +133,7 @@ const projects = [
   {
     title: "Personal Website",
     description:
-      "Personal website is built with ungodly amounts of front-end dev (and tears) from scratch, deployed on Vercel.",
+      "Personal website built with pure front-end from scratch, deployed on Vercel.",
     tags: ["NextJS", "TailwindCSS", "GraphQL", "PostgreSQL"],
   },
   {

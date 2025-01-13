@@ -8,6 +8,14 @@ import InternshipItem from "./InternshipItem";
 const internships = [
   {
     title: "Software Engineer Intern",
+    company: "Coinbase",
+    date: "Expected: May 2025",
+    description: "Incoming on Crypto Platforms Team, Backend Summer 2025",
+    imageSrc: "/images/oksi_logo.jpeg",
+    link: "https://www.coinbase.com/",
+  },
+  {
+    title: "Software Engineer Intern",
     company: "OKSI",
     date: "Apr 2024 - Current",
     description:
