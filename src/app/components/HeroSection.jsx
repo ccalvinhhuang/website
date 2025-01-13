@@ -11,7 +11,7 @@ const internships = [
     company: "Coinbase",
     date: "Expected: May 2025",
     description: "Incoming on Crypto Platforms Team, Backend Summer 2025",
-    imageSrc: "/images/oksi_logo.jpeg",
+    imageSrc: "/images/coinbase.jpeg",
     link: "https://www.coinbase.com/",
   },
   {
