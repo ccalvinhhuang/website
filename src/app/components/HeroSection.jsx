@@ -76,7 +76,7 @@ const HeroSection = () => {
       <div className="flex flex-col items-center mx-auto">
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-10">
           <Image
-            src="/images/calvin.jpeg"
+            src="/images/calvinphoto.jpeg"
             alt="hero image"
             className="rounded-full bg-black"
             width={150}
